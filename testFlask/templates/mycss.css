@@ -1,3 +1,9 @@
 p{
     color: #f4ffef;
 }
+
+#map {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
