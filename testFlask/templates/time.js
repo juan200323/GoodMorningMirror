@@ -1,4 +1,3 @@
-
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -17,6 +16,9 @@ function startTime() {
     document.getElementById('txt').innerHTML =
         h + ":" + m + ":" + s + pre;
     var t = setTimeout(startTime, 500);
+
+
+
 }
 
 function checkTime(i) {
@@ -51,4 +53,9 @@ function setAmOrPm(hour) {
     }
     return value;
 }
+
+
+
+
+
 

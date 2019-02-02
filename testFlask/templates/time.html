@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="mycss.css">
 <head>
+    <meta http-equiv="refresh" content="30">
+
     <meta charset="utf-8">
 
     <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-    <script src="{{ url_for('static',filename = 'time.js')}}"></script>
+
+
 
 
 </head>
@@ -17,8 +22,31 @@
 
 </style>
 
-<body onload="startTime()">
+<body>
+
+
 <div id="txt"></div>
+
+<div class="w3-container"></div>
+<p>What's on your Google Calendar?</p>
+
+
+<!--Add buttons to initiate auth sequence and sign out-->
+<button class="w3-button w3-black w3-round-xlarge" id="authorize_button" style="display: none;">Authorize</button>
+<button class="w3-button w3-black w3-round-xlarge" id="signout_button" style="display: none;">Sign Out</button>
+
+<pre id="content" style="white-space: pre-wrap;"></pre>
+
+<script src="time.js"></script>
+<script src="calendar.js"></script>
+
+<script async defer src="https://apis.google.com/js/api.js"
+        onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+
+</script>
+
+
 
 
 </body>
