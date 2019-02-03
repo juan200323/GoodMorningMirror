@@ -8,6 +8,7 @@ p{
 }
 
 #map {
+
     position: absolute;
     right: 0;
     height: 300px;
@@ -29,5 +30,6 @@ p{
     height: 200px;
     color: bisque;
     font-family: Karla;
+
 
 }
