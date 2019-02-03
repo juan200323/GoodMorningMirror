@@ -44,11 +44,13 @@ function initClient() {
 /**
  *  Called when the signed in status changes, to update the UI
  *  appropriately. After a sign-in, the API is called.
+ *
+ *  CHANGE signoutButton.style.display = 'block' TO SEE THE SIGN OUT BUTTON!!!
  */
 function updateSigninStatus(isSignedIn) {
     if (isSignedIn) {
         authorizeButton.style.display = 'none';
-        signoutButton.style.display = 'block';
+        signoutButton.style.display = 'none';
         listUpcomingEvents();
     } else {
         authorizeButton.style.display = 'block';
@@ -83,8 +85,7 @@ function appendPre(message) {
     var pre = document.getElementById('content');
     var textContent = document.createTextNode(message + '\n');
     pre.appendChild(textContent);
-    pre.style.color = "#00ff64";
-    pre.style.fontFamily = "sans-serif";
+
     pre.style.transition = "all 2s";
 }
 
@@ -103,18 +104,43 @@ function listUpcomingEvents() {
         'orderBy': 'startTime'
     }).then(function (response) {
         var events = response.result.items;
-        var str = 'Upcoming Events:';
-        appendPre(str);
-
 
         if (events.length > 0) {
             for (i = 0; i < events.length; i++) {
                 var event = events[i];
-                var when = event.start.dateTime;
-                if (!when) {
-                    when = event.start.date;
+                var startInfo = event.start.dateTime;
+                if (!startInfo) {
+                    startInfo = event.start.date;
+
+
                 }
-                appendPre(event.summary + ' (' + when + ')')
+                var SYear = startInfo.substring(0,4);
+                var SMonth = startInfo.substring(6,7);
+                var SDay = startInfo.substring(8,10);
+                var SNameOfDay = startInfo.substring(10,11);
+                var SstartTime = startInfo.substring(11,16);
+
+                var endInfo = event.end.dateTime;
+                var EYear = endInfo.substring(0,4);
+                var EMonth = endInfo.substring(6,7);
+                var EDay = endInfo.substring(8,10);
+                var ENameOfDay = endInfo.substring(10,11);
+                var EEndTime = endInfo.substring(11,16);
+
+
+
+                if(SYear === "2019")
+                {
+                    appendPre(EEndTime);
+                }
+                else
+                {
+                  appendPre(event.summary + ' (' + startInfo.substring(0,4) + ')');
+                }
+
+
+
+
 
             }
         } else {
