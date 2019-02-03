@@ -5,6 +5,8 @@ p{
     left: 0;
     width: 200px;
     height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 #map {
@@ -29,7 +31,11 @@ p{
     width: 300px;
     height: 200px;
     color: bisque;
-    font-family: Karla;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 
-
+}
+#txt{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
