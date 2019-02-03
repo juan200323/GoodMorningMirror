@@ -3,7 +3,7 @@ p{
 }
 
 #map {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    float: right;
+    height: 400px;
+    width: 300px;
 }
