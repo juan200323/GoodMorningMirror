@@ -118,7 +118,10 @@ function listUpcomingEvents() {
                 var SMonth = startInfo.substring(6,7);
                 var SDay = startInfo.substring(8,10);
                 var SNameOfDay = startInfo.substring(10,11);
-                var SstartTime = startInfo.substring(11,16);
+                //var SstartTime = startInfo.substring(11,16);
+                var SstartHour = startInfo.substring(11,13);
+                var SstartMinute = startInfo.substring(13,16);
+
 
                 var endInfo = event.end.dateTime;
                 var EYear = endInfo.substring(0,4);
@@ -127,15 +130,18 @@ function listUpcomingEvents() {
                 var ENameOfDay = endInfo.substring(10,11);
                 var EEndTime = endInfo.substring(11,16);
 
+                var pmOrAm = setAmOrPm(SstartHour);
+                var realHour = checkHour(SstartHour);
 
 
-                if(SYear === "2019")
+
+                if(SYear === "201")
                 {
-                    appendPre(EEndTime);
+                    appendPre(SstartHour);
                 }
                 else
                 {
-                  appendPre(event.summary + ' (' + startInfo.substring(0,4) + ')');
+                  appendPre(event.summary + ': ' + SMonth +'/' + SDay + '/' + SYear + " Start Time " + realHour+SstartMinute + pmOrAm);
                 }
 
 
