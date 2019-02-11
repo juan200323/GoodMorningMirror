@@ -1,4 +1,3 @@
-
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -12,11 +11,14 @@ function startTime() {
 
     //document.getElementById('txt').style.fontFamily = "Impact,Charcoal,sans-serif";
     document.getElementById('txt').style.fontSize = "xx-large";
-    document.getElementById('txt').style.color = "#ff0000";
+    document.getElementById('txt').style.color = "#feffe1";
     document.getElementById('txt').style.textAlign = "center";
     document.getElementById('txt').innerHTML =
         h + ":" + m + ":" + s + pre;
     var t = setTimeout(startTime, 500);
+
+
+
 }
 
 function checkTime(i) {
@@ -51,4 +53,9 @@ function setAmOrPm(hour) {
     }
     return value;
 }
+
+
+
+
+
 

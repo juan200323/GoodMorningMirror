@@ -1,0 +1,41 @@
+p{
+    color: #f4ffef;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#map {
+
+    position: absolute;
+    right: 0;
+    height: 300px;
+    width: 400px;
+}
+#signout_button{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100px;
+    height: 35px;
+
+}
+#content{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    color: bisque;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+
+}
+#txt{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
