@@ -10,8 +10,8 @@ p{
 }
 
 #map {
-    height: 300px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
     float: right;
 }
 #signout_button{
@@ -34,7 +34,7 @@ p{
 
 }
 
-#mapAndTime{
+#mapTimeWeather{
     position: absolute;
     right: 0;
 }
@@ -43,11 +43,22 @@ p{
     font-weight: lighter;
 }
 
-#travelTime{
+#travelTime {
     font-size: 20px;
     color: #f4ffef;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
+    width: 300px;
+    float: right;
+    clear: right;
+}
+
+#weather{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    width: 300px;
+    font-size: large;
+    color: floralwhite;
     float: right;
     clear: right;
 }

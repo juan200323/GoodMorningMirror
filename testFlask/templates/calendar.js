@@ -82,6 +82,7 @@ function handleSignoutClick(event) {
  */
 function appendPre(message) {
     startTime();
+    getLocation();
     var pre = document.getElementById('content');
     var textContent = document.createTextNode(message + '\n');
     pre.appendChild(textContent);
@@ -106,47 +107,35 @@ function listUpcomingEvents() {
         var events = response.result.items;
 
         if (events.length > 0) {
-            for (i = 0; i < events.length; i++) {
+            for (var i = 0; i < events.length; i++) {
                 var event = events[i];
                 var startInfo = event.start.dateTime;
                 if (!startInfo) {
                     startInfo = event.start.date;
-
-
                 }
-                var SYear = startInfo.substring(0,4);
-                var SMonth = startInfo.substring(6,7);
-                var SDay = startInfo.substring(8,10);
-                var SNameOfDay = startInfo.substring(10,11);
-                //var SstartTime = startInfo.substring(11,16);
-                var SstartHour = startInfo.substring(11,13);
-                var SstartMinute = startInfo.substring(13,16);
-
-
-                var endInfo = event.end.dateTime;
-                var EYear = endInfo.substring(0,4);
-                var EMonth = endInfo.substring(6,7);
-                var EDay = endInfo.substring(8,10);
-                var ENameOfDay = endInfo.substring(10,11);
-                var EEndTime = endInfo.substring(11,16);
-
+                //Parse info for start of event
+                var SYear = startInfo.substring(0, 4);
+                var SMonth = startInfo.substring(6, 7);
+                var SDay = startInfo.substring(8, 10);
+                var SstartHour = startInfo.substring(11, 13);
+                var SstartMinute = startInfo.substring(13, 16);
                 var pmOrAm = setAmOrPm(SstartHour);
                 var realHour = checkHour(SstartHour);
 
+                //Start of event info not used
+                var SNameOfDay = startInfo.substring(10, 11);
+                //var SstartTime = startInfo.substring(11,16);
+
+                //This is parse info for the end of the event
+                //var endInfo = event.end.dateTime;
+                // var EYear = endInfo.substring(0,4);
+                // var EMonth = endInfo.substring(6,7);
+                // var EDay = endInfo.substring(8,10);
+                // var ENameOfDay = endInfo.substring(10,11);
+                // var EEndTime = endInfo.substring(11,16);
 
 
-                if(SYear === "201")
-                {
-                    appendPre(SstartHour);
-                }
-                else
-                {
-                  appendPre(event.summary + ': ' + SMonth +'/' + SDay + '/' + SYear + " Start Time " + realHour+SstartMinute + pmOrAm);
-                }
-
-
-
-
+                appendPre(event.summary + ': ' + SMonth + '/' + SDay + '/' + SYear + " Start Time " + realHour + SstartMinute + pmOrAm);
 
             }
         } else {
