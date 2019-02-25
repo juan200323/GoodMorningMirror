@@ -10,11 +10,9 @@ p{
 }
 
 #map {
-
-    position: absolute;
-    right: 0;
     height: 300px;
     width: 400px;
+    float: right;
 }
 #signout_button{
     position: absolute;
@@ -35,7 +33,21 @@ p{
     font-weight: lighter;
 
 }
+
+#mapAndTime{
+    position: absolute;
+    right: 0;
+}
 #txt{
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
+}
+
+#travelTime{
+    font-size: 20px;
+    color: #f4ffef;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    float: right;
+    clear: right;
 }
