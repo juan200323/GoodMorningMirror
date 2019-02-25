@@ -30,6 +30,7 @@ function locationSuccess(position) {
     directionsDisplay.setMap(map);
     trafficLayer.setMap(map);
 
+
     //This will mark the current location if found
     // var myLocationMarker = new google.maps.Marker({
     //     position: myLocation,
@@ -42,14 +43,39 @@ function locationSuccess(position) {
     var request = {
         origin: Ventura,
         destination: CSUCI,
-        travelMode: 'DRIVING'
+        travelMode: google.maps.TravelMode.DRIVING
     };
 
     directionsService.route(request, function (result, status) {
-        if (status == google.maps.DirectionsStatus.OK)
+        if (status == google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(result);
+            document.getElementById('travelTime').innerHTML = convertSeoncdsToTime(result.routes[0].legs[0].duration.value);
+
+        }
     });
 
+}
+
+function convertSeoncdsToTime(time){
+    var sec_num = parseInt(time, 10); // don't forget the second param
+    var hours   = Math.floor(sec_num / 3600);
+    var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+    var seconds = sec_num - (hours * 3600) - (minutes * 60);
+
+    if(hours < 1 && minutes > 10)
+        return minutes + ' mins to work';
+    else if(hours < 1 && minutes < 10)
+        return minutes + ' min to work';
+    else if(hours < 10 && minutes > 10)
+        return hours + ' hr ' + minutes + ' mins to work';
+    else if(hours < 10 && minutes < 10)
+        return hours + ' hr ' + minutes + ' min to work';
+    else if(hours > 10 && minutes > 10)
+        return hours + ' hrs ' + minutes + ' mins to work';
+    else if(hours > 10 && minutes < 10)
+        return hours + ' hrs ' + minutes + ' min to work';
+    else
+        return 'nope'
 }
 
 function locationError() {
