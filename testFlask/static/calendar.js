@@ -83,6 +83,7 @@ function handleSignoutClick(event) {
 function appendPre(message) {
     startTime();
     getLocation();
+    initMap();
     var pre = document.getElementById('content');
     var textContent = document.createTextNode(message + '\n');
     pre.appendChild(textContent);

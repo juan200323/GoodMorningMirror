@@ -19,11 +19,16 @@ function locationSuccess(position) {
     var LA = new google.maps.LatLng(34.0522, -118.2437);
     var Ventura = new google.maps.LatLng(34.2805, -119.2945);
     var CSUCI = new google.maps.LatLng(34.1621, -119.0434);
+    var Disney = new google.maps.LatLng(33.8121, -117.9190);
 
 
     var mapOptions = {
         zoom: 9,
-        center: {lat: 34.2805, lng: -119.2945}
+        center: {lat: 34.2805, lng: -119.2945},
+        mapTypeControl: false,
+        streetViewControl: false,
+        zoomControl: false,
+        fullscreenControl: false
     };
 
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -41,8 +46,8 @@ function locationSuccess(position) {
     map.setCenter(myLocation);
 
     var request = {
-        origin: Ventura,
-        destination: CSUCI,
+        origin: myLocation,
+        destination: Disney,
         travelMode: google.maps.TravelMode.DRIVING
     };
 
