@@ -5,21 +5,23 @@ var units = '&units=imperial';
 var latitude = 'lat=';
 var longitude = '&lon=';
 var url;
-var x = document.getElementById("weather");
+var weatherDisplay = document.getElementById("weather");
 
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(getWeather);
   } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
+    weatherDisplay.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
 
 function getWeather(position) {
     url = weather_api_url + latitude + position.coords.latitude + longitude + position.coords.longitude + units + api_key;
     jQuery.getJSON(url,function (data) {
-        console.log(data.main.temp);
-        x.innerHTML= "Weather<br>" + data.main.temp + "°F";
+        weatherDisplay.innerHTML= "Weather<br>" + data.main.temp + "°F";
+        var iconForWeather = document.getElementById("weatherIcon");
+        var wIcon = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+        iconForWeather.setAttribute("src",wIcon);
 
     });
 

@@ -49,3 +49,8 @@ p{
     font-size: large;
     color: floralwhite;
 }
+#weatherIcon{
+    position:fixed;
+    bottom: 12%;
+    left:2%;
+}
