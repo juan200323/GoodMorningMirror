@@ -10,11 +10,9 @@ p{
 }
 
 #map {
-
-    position: absolute;
-    right: 0;
-    height: 300px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
+    float: right;
 }
 #signout_button{
     position: absolute;
@@ -35,22 +33,40 @@ p{
     font-weight: lighter;
 
 }
+
+#mapTimeWeather{
+    position: absolute;
+    right: 0;
+}
 #txt{
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 }
-#weather{
-    position: fixed;
-    bottom: 0%;
+
+#travelTime {
+    font-size: 20px;
+    color: #f4ffef;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     width: 300px;
-    height: 200px;
+    float: right;
+    clear: right;
+}
+
+#weather{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    width: 300px;
     font-size: large;
     color: floralwhite;
+<<<<<<< HEAD:testFlask/templates/mycss.css
 }
 #weatherIcon{
     position:fixed;
     bottom: 12%;
     left:2%;
+=======
+    float: right;
+    clear: right;
+>>>>>>> development:testFlask/static/mycss.css
 }
