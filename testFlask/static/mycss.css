@@ -59,14 +59,10 @@ p{
     width: 300px;
     font-size: large;
     color: floralwhite;
-<<<<<<< HEAD:testFlask/templates/mycss.css
+
 }
 #weatherIcon{
     position:fixed;
-    bottom: 12%;
-    left:2%;
-=======
-    float: right;
-    clear: right;
->>>>>>> development:testFlask/static/mycss.css
+    bottom: 38%;
+    right:18%
 }
