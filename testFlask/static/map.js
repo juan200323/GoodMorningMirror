@@ -47,7 +47,7 @@ function locationSuccess(position) {
 
     var request = {
         origin: myLocation,
-        destination: Disney,
+        destination: CSUCI,
         travelMode: google.maps.TravelMode.DRIVING
     };
 
