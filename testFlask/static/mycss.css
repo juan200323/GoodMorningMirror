@@ -1,3 +1,8 @@
+body {
+        background-color: #000000;
+        font-family: 'Roboto', sans-serif;
+}
+
 p{
     color: #f4ffef;
     position: absolute;
@@ -11,8 +16,8 @@ p{
 
 #map {
     height: 200px;
-    width: 300px;
-    float: right;
+    width: 200px;
+    position: relative;
 }
 #signout_button{
     position: absolute;
@@ -62,7 +67,10 @@ p{
 
 }
 #weatherIcon{
-    position:fixed;
-    bottom: 38%;
-    right:18%
+    width: 35px;
+    height: 40px;
+    transform: rotate(10deg);
+    position: relative;
+    bottom: 45px;
+    left: 100px;
 }

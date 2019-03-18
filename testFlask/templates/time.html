@@ -7,9 +7,7 @@
 
     <meta charset="utf-8">
 
-    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
-
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7tydEW7tS2fFT0MaV4_Zj6n80TAkNOn8">
     </script>
@@ -17,15 +15,6 @@
 
 
 </head>
-<style>
-    body {
-        background-color: #494848;
-        font-family: 'Karla', serif;
-    }
-
-
-</style>
-
 <body>
 
 
@@ -35,6 +24,7 @@
     <div id="map"></div>
     <div id="travelTime"></div>
     <div id="weather"></div>
+    <img id="weatherIcon" src=""/>
 </div>
 
 <div class="w3-container"></div>
@@ -53,8 +43,6 @@
 <script src="../static/calendar.js"></script>
 <script src="../static/map.js"></script>
 <script src="../static/weather.js"></script>
-
-<img id="weatherIcon" src=""/>
 
 <script async defer src="https://apis.google.com/js/api.js"
         onload="this.onload=function(){};handleClientLoad()"

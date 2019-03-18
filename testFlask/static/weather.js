@@ -20,7 +20,7 @@ function getWeather(position) {
     jQuery.getJSON(url,function (data) {
         weatherDisplay.innerHTML= "Weather<br>" + data.main.temp + "°F";
         var iconForWeather = document.getElementById("weatherIcon");
-        var wIcon = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+        var wIcon = "../icons/" + data.weather[0].icon + ".png";
         iconForWeather.setAttribute("src",wIcon);
 
     });
