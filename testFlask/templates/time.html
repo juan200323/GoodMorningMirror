@@ -1,63 +1,54 @@
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="../static/mycss.css">
-<head>
-    <meta http-equiv="refresh" content="30">
+<!DOCTYPE HTML>
+<html lang="en">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../static/mycss.css">
+    <head>
+        <title>Good Morning Mirror</title>
+        <meta charset="utf-8">
 
-    <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7tydEW7tS2fFT0MaV4_Zj6n80TAkNOn8">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7tydEW7tS2fFT0MaV4_Zj6n80TAkNOn8">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-    <style>
-        body {
-            background-color: #000000;
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
-
-
-</head>
-<body>
+        <style>
+            body {
+                background-color: #000000;
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
 
 
-<div id="txt"></div>
-
-<div id="mapTimeWeather">
-    <div id="map"></div>
-    <div id="travelTime"></div>
-    <div id="weather"></div>
-    <img id="weatherIcon" src=""/>
-</div>
-
-<div class="w3-container"></div>
+    </head>
+    <body>
 
 
+        <div id="timeHeader"></div>
+
+        <div id="mapTimeWeather">
+            <div id="map"></div>
+            <div id="travelTime"></div>
+            <div id="weather"></div>
+            <img alt="weatherIcon" id="weatherIcon" src=""/>
+        </div>
 
 
-<!--Add buttons to initiate auth sequence and sign out-->
-<button class="w3-button w3-black w3-round-xlarge" id="authorize_button" style="display: none;">Authorize</button>
-<button class="w3-button w3-black w3-round-xlarge" id="signout_button" style="display: none;">Sign Out</button>
+        <!--Add buttons to initiate auth sequence and sign out-->
+        <button class="w3-button w3-black w3-round-xlarge" id="authorize_button" style="display: none;">Authorize</button>
+        <button class="w3-button w3-black w3-round-xlarge" id="signout_button" style="display: none;">Sign Out</button>
 
-<p>What's on your Google Calendar?</p>
-<pre id="content" style="white-space: pre-wrap;"></pre>
+        <p>What's on your Google Calendar?</p>
+        <pre id="content" style="white-space: pre-wrap;"></pre>
 
-<script src="../static/time.js"></script>
-<script src="../static/calendar.js"></script>
-<script src="../static/map.js"></script>
-<script src="../static/weather.js"></script>
+        <script src="../static/time.js"></script>
+        <script src="../static/calendar.js"></script>
+        <script src="../static/map.js"></script>
+        <script src="../static/weather.js"></script>
 
-<script async defer src="https://apis.google.com/js/api.js"
-        onload="this.onload=function(){};handleClientLoad()"
-        onreadystatechange="if (this.readyState === 'complete') this.onload()">
-</script>
-
-
-
-
-</body>
+        <script async defer src="https://apis.google.com/js/api.js"
+                onload="this.onload=function(){};handleClientLoad()"
+                onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
+    </body>
 </html>

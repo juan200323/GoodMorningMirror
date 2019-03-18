@@ -9,6 +9,17 @@ p{
     font-weight: lighter;
 }
 
+/*animation called "fadein" */
+@keyframes fadein {
+    from {
+            opacity: 0;
+         }
+    to   {
+            opacity: 1;
+         }
+}
+
+
 #map {
     height: 200px;
     width: 200px;
@@ -38,9 +49,15 @@ p{
     position: absolute;
     right: 0;
 }
-#txt{
+
+#timeHeader{
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
+    font-size: xx-large;
+    color: #feffe1;
+    text-align: center;
+    animation-name: fadein;
+    animation-duration: 5s;
 }
 
 #travelTime {

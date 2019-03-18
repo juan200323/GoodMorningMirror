@@ -87,7 +87,6 @@ function appendPre(message) {
     var pre = document.getElementById('content');
     var textContent = document.createTextNode(message + '\n');
     pre.appendChild(textContent);
-
     pre.style.transition = "all 2s";
 }
 
@@ -142,5 +141,9 @@ function listUpcomingEvents() {
         } else {
             appendPre('No upcoming events found.');
         }
+
+        window.setInterval(function(){
+                $("#content").clear();
+                $("#content").load(listUpcomingEvents());},  5 * 1000);
     });
 }

@@ -9,11 +9,7 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
 
-    //document.getElementById('txt').style.fontFamily = "Impact,Charcoal,sans-serif";
-    document.getElementById('txt').style.fontSize = "xx-large";
-    document.getElementById('txt').style.color = "#feffe1";
-    document.getElementById('txt').style.textAlign = "center";
-    document.getElementById('txt').innerHTML =
+    document.getElementById('timeHeader').innerHTML =
         h + ":" + m + ":" + s + pre;
     var t = setTimeout(startTime, 500);
 
