@@ -21,7 +21,6 @@ function getWeather(position) {
         weatherDisplay.innerHTML= "Weather<br>" + data.main.temp + "°F";
         var iconForWeather = document.getElementById("weatherIcon");
         var wIcon = "../icons/" + data.weather[0].icon + ".png";
-        document.write(wIcon);
         iconForWeather.setAttribute("src",wIcon);
 
     });
