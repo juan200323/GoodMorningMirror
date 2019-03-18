@@ -11,23 +11,26 @@ p{
 
 /*animation called "fadein" */
 @keyframes fadein {
-    from {
+    0% {
             opacity: 0;
          }
-    to   {
+    100%   {
             opacity: 1;
+            transform: translateY(0);
          }
 }
 
 /*animation called "fadein" for other browsers*/
 @-webkit-keyframes fadein {
-    from {
+    0% {
             opacity: 0;
          }
-    to   {
+    100%   {
             opacity: 1;
+            transform: translateY(0);
          }
 }
+
 
 
 #map {
@@ -43,6 +46,14 @@ p{
     height: 35px;
 
 }
+
+#calendarQuestion{
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
 #content{
     position: absolute;
     top: 100px;
@@ -52,12 +63,23 @@ p{
     color: bisque;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
 
 }
 
 #mapTimeWeather{
     position: absolute;
     right: 0;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
 }
 
 #timeHeader{
@@ -67,8 +89,9 @@ p{
     color: #feffe1;
     text-align: center;
     animation-name: fadein;
-    animation-duration: 5s;
-    -webkit-animation: fadein 5s;
+    animation-duration: 3s;
+    -webkit-animation: fadein 5s linear forwards;
+
 }
 
 #travelTime {
