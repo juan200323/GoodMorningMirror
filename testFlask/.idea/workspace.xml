@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="187e1e9e-3847-4e94-9606-02c85a83454b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/01d.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/01d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/01n.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/01n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/02d.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/02d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/02n.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/02n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/03d.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/03d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/03n.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/03n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/04d.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/04d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/04n.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/04n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/09d.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/09d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/09n.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/09n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/10n.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/10n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/13d.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/13d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/13n.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/13n.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/calendar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/mycss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/time.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/time.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/weather.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/time.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/time.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFlask.py" beforeDir="false" afterPath="$PROJECT_DIR$/testFlask.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +29,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/testFlask$testFlask.coverage" NAME="testFlask Coverage Results" MODIFIED="1552888502656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/testFlask$testFlask.coverage" NAME="testFlask Coverage Results" MODIFIED="1552898816701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -26,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testFlask.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -35,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/time.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="45">
+              <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
               <folding>
                 <element signature="n#style#0;n#pre#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -47,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/mycss.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+            <state relative-caret-position="930">
+              <caret line="62" column="11" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -56,17 +69,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/time.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="330">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/weather.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -80,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="145" column="51" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="51" />
+            <state relative-caret-position="2130">
+              <caret line="142" column="9" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -113,6 +126,8 @@
       <find>time</find>
       <find>w3-container</find>
       <find>listUpcomingEvents</find>
+      <find>fav</find>
+      <find>favicon</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,13 +144,14 @@
         <option value="$PROJECT_DIR$/templates/calendar.js" />
         <option value="$PROJECT_DIR$/templates/mycss.css" />
         <option value="$PROJECT_DIR$/templates/weather.js" />
-        <option value="$PROJECT_DIR$/testFlask.py" />
-        <option value="$PROJECT_DIR$/static/weather.js" />
+        <option value="$PROJECT_DIR$/static/map.js" />
+        <option value="$PROJECT_DIR$/static/calendar.js" />
         <option value="$PROJECT_DIR$/static/mycss.css" />
         <option value="$PROJECT_DIR$/static/time.js" />
-        <option value="$PROJECT_DIR$/static/map.js" />
+        <option value="$PROJECT_DIR$/test_index.py" />
+        <option value="$PROJECT_DIR$/testFlask.py" />
         <option value="$PROJECT_DIR$/templates/time.html" />
-        <option value="$PROJECT_DIR$/static/calendar.js" />
+        <option value="$PROJECT_DIR$/static/weather.js" />
       </list>
     </option>
   </component>
@@ -186,6 +202,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/workspace.xml" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
@@ -302,31 +319,31 @@
       <workItem from="1549140051436" duration="4096000" />
       <workItem from="1552872794825" duration="2784000" />
       <workItem from="1552882770917" duration="3786000" />
-      <workItem from="1552888079908" duration="3320000" />
+      <workItem from="1552888079908" duration="6655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14875000" />
+    <option name="totallyTimeSpent" value="18210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.028612303" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13161659" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="REST Client" sideWeight="0.49928468" weight="0.37546468" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4914163" visible="true" weight="0.3283767" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4899857" visible="true" weight="0.3283767" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50858366" side_tool="true" visible="true" weight="0.3283767" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5100143" side_tool="true" visible="true" weight="0.3283767" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -354,34 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testFlask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/time.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/weather.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/mycss.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -389,20 +378,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="142" column="9" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFlask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/time.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mycss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="11" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/time.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="45">
+          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
           <folding>
             <element signature="n#style#0;n#pre#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/calendar.js">
+    <entry file="file://$PROJECT_DIR$/static/weather.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="145" column="51" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="51" />
+        <state relative-caret-position="330">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
         </state>
       </provider>
     </entry>

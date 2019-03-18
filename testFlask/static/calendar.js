@@ -141,9 +141,5 @@ function listUpcomingEvents() {
         } else {
             appendPre('No upcoming events found.');
         }
-
-        window.setInterval(function(){
-                $("#content").clear();
-                $("#content").load(listUpcomingEvents());},  5 * 1000);
     });
 }

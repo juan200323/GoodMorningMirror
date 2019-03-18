@@ -19,6 +19,16 @@ p{
          }
 }
 
+/*animation called "fadein" for other browsers*/
+@-webkit-keyframes fadein {
+    from {
+            opacity: 0;
+         }
+    to   {
+            opacity: 1;
+         }
+}
+
 
 #map {
     height: 200px;
@@ -58,6 +68,7 @@ p{
     text-align: center;
     animation-name: fadein;
     animation-duration: 5s;
+    -webkit-animation: fadein 5s;
 }
 
 #travelTime {
