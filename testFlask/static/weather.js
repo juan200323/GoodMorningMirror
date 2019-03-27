@@ -18,7 +18,7 @@ function getLocation() {
 function getWeather(position) {
     url = weather_api_url + latitude + position.coords.latitude + longitude + position.coords.longitude + units + api_key;
     jQuery.getJSON(url,function (data) {
-        weatherDisplay.innerHTML= "Weather<br>" + data.main.temp + "°F";
+        weatherDisplay.innerHTML = data.main.temp + "°F";
         var iconForWeather = document.getElementById("weatherIcon");
         var wIcon = "../static/icons/" + data.weather[0].icon + ".png";
         iconForWeather.setAttribute("src",wIcon);

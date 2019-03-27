@@ -32,12 +32,6 @@ p{
 }
 
 
-
-#map {
-    height: 200px;
-    width: 200px;
-    position: relative;
-}
 #signout_button{
     position: absolute;
     top: 100px;
@@ -47,12 +41,25 @@ p{
 
 }
 
-#calendarQuestion{
+#GoodMorning\!{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    color: #feffe1;
+    text-align: center;
+    animation-name: fadein;
+    animation-duration: 3s;
+    -webkit-animation: fadein 5s linear forwards;
+
+}
+
+#calendarTitle{
     opacity: 0;
     animation-name: fadein;
     animation-duration: 3s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
+    font-size: 30px;
 }
 #content{
     position: absolute;
@@ -63,17 +70,7 @@ p{
     color: bisque;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    opacity: 0;
-    animation-name: fadein;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-
-}
-
-#mapTimeWeather{
-    position: absolute;
-    right: 0;
+    font-size: large;
     opacity: 0;
     animation-name: fadein;
     animation-duration: 3s;
@@ -85,38 +82,68 @@ p{
 #timeHeader{
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    font-size: xx-large;
+    font-size: 40px;
     color: #feffe1;
     text-align: center;
+    position: absolute;
+    top: 60px;
+    right: 55px;
+    opacity: 0;
     animation-name: fadein;
     animation-duration: 3s;
-    -webkit-animation: fadein 5s linear forwards;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
 
+#mapAndTravelTime{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#map {
+    height: 200px;
+    width: 200px;
+    float: left;
+    clear: left;
 }
 
 #travelTime {
-    font-size: 20px;
+    font-size: 30px;
     color: #f4ffef;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     width: 300px;
-    float: right;
-    clear: right;
+    float: left;
+    clear: left;
+}
+
+#weatherAndIcon{
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
 }
 
 #weather{
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    width: 300px;
-    font-size: large;
+    font-size: 40px;
     color: floralwhite;
-
+    display: inline;
 }
 #weatherIcon{
-    width: 35px;
-    height: 40px;
-    transform: rotate(10deg);
-    position: relative;
-    bottom: 45px;
-    left: 100px;
+    display: inline;
+    width: 100px;
+    height: 100px;
 }

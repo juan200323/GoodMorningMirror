@@ -14,7 +14,7 @@
 
         <style>
             body {
-                background-color: #000000;
+                background-color: rgba(0, 0, 0, 0.98);
                 font-family: 'Roboto', sans-serif;
             }
         </style>
@@ -22,11 +22,16 @@
 
     </head>
     <body>
+
+        <h1 id="GoodMorning!">- Good Morning! -</h1>
         <div id="timeHeader"></div>
 
-        <div id="mapTimeWeather">
-            <div id="map"></div>
+        <div id="mapAndTravelTime">
             <div id="travelTime"></div>
+            <div id="map"></div>
+        </div>
+
+        <div id="weatherAndIcon">
             <div id="weather"></div>
             <img alt="weatherIcon" id="weatherIcon" src=""/>
         </div>
@@ -36,7 +41,7 @@
         <button class="w3-button w3-black w3-round-xlarge" id="authorize_button" style="display: none;">Authorize</button>
         <button class="w3-button w3-black w3-round-xlarge" id="signout_button" style="display: none;">Sign Out</button>
 
-        <p id="calendarQuestion">What's on your Google Calendar?</p>
+        <p id="calendarTitle">Calendar</p>
         <pre id="content" style="white-space: pre-wrap;"></pre>
 
         <script src="../static/time.js"></script>
