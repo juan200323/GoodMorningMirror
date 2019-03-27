@@ -14,4 +14,18 @@ The software used to develop the Good Morning Mirror are:
 * [Google Directions API](https://developers.google.com/maps/documentation/directions/intro)
 * [OpenWeatherMap API](https://openweathermap.org/api)
 
+## Hardware
+
+The following materials were used to assemble the Good Morning Mirror:
+
+* [Two Way Glass Mirror](https://www.amazon.com/gp/product/B06Y2JMH7C/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+* [Raspberry Pi 3 Model B Board](https://www.amazon.com/Raspberry-Pi-MS-004-00000024-Model-Board/dp/B01LPLPBS8/ref=sr_1_5?keywords=Raspberry+Pi+3+B&qid=1553664742&s=gateway&sr=8-5)
+* Hannspree HF229H 22" Widescreen LCD Monitor
+* Wooden Frame - In our case, we hand made our frame
+
+## Authors
+
+* [Juan Ramirez](https://github.com/juan200323)
+* [Marco Bustamante](https://github.com/iiCloudex)
+
 
