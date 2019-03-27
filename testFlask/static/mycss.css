@@ -1,3 +1,8 @@
+body {
+    background-color: rgba(0, 0, 0, 0.98);
+    font-family: 'Roboto', sans-serif;
+}
+
 p{
     color: #f4ffef;
     position: absolute;
@@ -50,7 +55,6 @@ p{
     animation-name: fadein;
     animation-duration: 3s;
     -webkit-animation: fadein 5s linear forwards;
-
 }
 
 #calendarTitle{
@@ -76,7 +80,6 @@ p{
     animation-duration: 3s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
-
 }
 
 #timeHeader{
@@ -132,7 +135,6 @@ p{
     animation-duration: 3s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
-
 }
 
 #weather{

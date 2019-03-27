@@ -12,9 +12,6 @@ function startTime() {
     document.getElementById('timeHeader').innerHTML =
         h + ":" + m + ":" + s + pre;
     var t = setTimeout(startTime, 500);
-
-
-
 }
 
 function checkTime(i) {
