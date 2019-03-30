@@ -80,13 +80,14 @@ function handleSignoutClick(event) {
  *
  * @param {string} message Text to be placed in pre element.
  */
-function appendPre(message) {
+function appendPre(header,message) {
     startTime();
     getLocation();
     initMap();
     var pre = document.getElementById('content');
-    var textContent = document.createTextNode(message + '\n');
-    pre.appendChild(textContent);
+    //var textContent = document.createTextNode(pre.innerHTML = "<b>" + message + "</b>" + "\n");
+    //pre.appendChild( pre.innerHTML = "<b>" + message + "</b>" + "\n");
+    pre.insertAdjacentHTML("beforeend","<strong>" + header + "</strong>" + message + "\n");
     pre.style.transition = "all 2s";
 }
 
@@ -133,9 +134,17 @@ function listUpcomingEvents() {
                 // var EDay = endInfo.substring(8,10);
                 // var ENameOfDay = endInfo.substring(10,11);
                 // var EEndTime = endInfo.substring(11,16);
+                var eventTitle = String(event.summary);
+                var today = new Date();
 
 
-                appendPre(event.summary + ': ' + SMonth + '/' + SDay + '/' + SYear + " Start Time " + realHour + SstartMinute + pmOrAm);
+
+
+
+
+
+
+                appendPre( eventTitle , " - " + realHour + SstartMinute + pmOrAm);
 
             }
         } else {
