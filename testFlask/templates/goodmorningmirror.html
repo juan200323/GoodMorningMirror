@@ -65,7 +65,16 @@
         <button class="w3-button w3-black w3-round-xlarge" id="authorize_button" style="display: none;">Authorize</button>
         <button class="w3-button w3-black w3-round-xlarge" id="signout_button" style="display: none;">Sign Out</button>
 
-        <p id="calendarTitle">Calendar</p>
+        <p id="calendarTitle">
+            <script>
+                const monthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+                var date = new Date();
+                var month = date.getUTCMonth();
+                var day = date.getUTCDate();
+                var year = date.getUTCFullYear();
+                document.getElementById("calendarTitle").innerHTML = monthNames[month] + " " + day + ", " + year;
+            </script>
+        </p>
         <div id="content"></div>
 
         <script src="../static/time.js"></script>
