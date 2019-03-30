@@ -28,30 +28,45 @@
     </head>
     <body>
 
-        <h1 id="GoodMorning!">- Good Morning! -</h1>
+        <h1 id="greeting">
+            <script>
+                var date = new Date();
+                var hour = date.getHours();
+                var h1 = document.getElementById("greeting")
+
+                if(hour < 12){
+                    h1.innerText = "- Good Morning -";
+                }
+                else if(hour < 18){
+                    h1.innerText = "- Good Afternoon -";
+                }
+                else{
+                    h1.innerText = "- Good Evening -";
+                }
+            </script>
+        </h1>
+
         <button id="authorize_button">
             <img src="../static/icons/SignIn.png" style=" padding: 0; width: 150px; height: 35px;"/>
         </button>
 
-        <div id="timeHeader"></div>
+        <div id="weatherTimeAndWeatherIcon">
+            <div id="timeHeader"></div>
+            <div id="weather"></div>
+            <img alt="weatherIcon" id="weatherIcon" src=""/>
+        </div>
 
         <div id="mapAndTravelTime">
             <div id="travelTime"></div>
             <div id="map"></div>
         </div>
 
-        <div id="weatherAndIcon">
-            <div id="weather"></div>
-            <img alt="weatherIcon" id="weatherIcon" src=""/>
-        </div>
-
-
         <!--Add buttons to initiate auth sequence and sign out-->
         <button class="w3-button w3-black w3-round-xlarge" id="authorize_button" style="display: none;">Authorize</button>
         <button class="w3-button w3-black w3-round-xlarge" id="signout_button" style="display: none;">Sign Out</button>
 
         <p id="calendarTitle">Calendar</p>
-        <div id="content" style="white-space: pre-wrap;"></div>
+        <div id="content"></div>
 
         <script src="../static/time.js"></script>
         <script src="../static/calendar.js"></script>
