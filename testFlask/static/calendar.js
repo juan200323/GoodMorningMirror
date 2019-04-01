@@ -151,7 +151,7 @@ function listUpcomingEvents() {
                 }
             }
         } else {
-            appendPre("","You should add to your calendar(Need to come with something better).");
+            appendPre("","You have no events.\nTry adding events to your Google Calendar!");
         }
     });
 }
