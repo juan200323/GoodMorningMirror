@@ -80,14 +80,17 @@ function handleSignoutClick(event) {
  *
  * @param {string} message Text to be placed in pre element.
  */
-function appendPre(message) {
+function appendPre(header,message) {
     startTime();
     getLocation();
     initMap();
     var pre = document.getElementById('content');
-    var textContent = document.createTextNode(message + '\n');
-    pre.appendChild(textContent);
-    pre.style.transition = "all 2s";
+    pre.insertAdjacentHTML("beforeend","<strong>" + header + "</strong>" + message + "\n");
+//////////////////////Will delete after testing//////////////////////////////////////////////
+    //var textContent = document.createTextNode(pre.innerHTML = "<b>" + message + "</b>" + "\n");
+    //pre.appendChild( pre.innerHTML = "<b>" + message + "</b>" + "\n");
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 }
 
 /**
@@ -105,6 +108,8 @@ function listUpcomingEvents() {
         'orderBy': 'startTime'
     }).then(function (response) {
         var events = response.result.items;
+        var eventCount = 0;
+        const eventsToDisplay = 3;
 
         if (events.length > 0) {
             for (var i = 0; i < events.length; i++) {
@@ -121,9 +126,12 @@ function listUpcomingEvents() {
                 var SstartMinute = startInfo.substring(13, 16);
                 var pmOrAm = setAmOrPm(SstartHour);
                 var realHour = checkHour(SstartHour);
+                var eventTitle = String(event.summary);
+                var today = new Date();
+                var todayMonth = today.getMonth() + 1;
 
-                //Start of event info not used
-                var SNameOfDay = startInfo.substring(10, 11);
+//////////////////////////Start of event info not used(Delete after testing)//////////////////////////////////////////
+                //var SNameOfDay = startInfo.substring(10, 11);
                 //var SstartTime = startInfo.substring(11,16);
 
                 //This is parse info for the end of the event
@@ -133,13 +141,17 @@ function listUpcomingEvents() {
                 // var EDay = endInfo.substring(8,10);
                 // var ENameOfDay = endInfo.substring(10,11);
                 // var EEndTime = endInfo.substring(11,16);
-
-
-                appendPre(event.summary + ': ' + SMonth + '/' + SDay + '/' + SYear + " Start Time " + realHour + SstartMinute + pmOrAm);
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                if((String(todayMonth) === String(SMonth)) && (String(today.getDate()) === String(SDay)) && eventCount < eventsToDisplay) {
+                    appendPre( eventTitle , " - " + realHour + SstartMinute + pmOrAm);
+                    count++;
+                } else if(count === 0 && (String(today.getDate()) !== String(SDay))) {
+                    appendPre("", "Nothing for today");
+                    i = events.length;
+                }
             }
         } else {
-            appendPre('No upcoming events found.');
+            appendPre("","You should add to your calendar(Need to come with something better).");
         }
     });
 }
