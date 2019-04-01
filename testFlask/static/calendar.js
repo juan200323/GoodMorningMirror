@@ -109,7 +109,7 @@ function listUpcomingEvents() {
     }).then(function (response) {
         var events = response.result.items;
         var eventCount = 0;
-        const eventsToDisplay = 3;
+        const eventsToDisplay = 12;
 
         if (events.length > 0) {
             for (var i = 0; i < events.length; i++) {
