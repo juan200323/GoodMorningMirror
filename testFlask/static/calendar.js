@@ -144,8 +144,8 @@ function listUpcomingEvents() {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 if((String(todayMonth) === String(SMonth)) && (String(today.getDate()) === String(SDay)) && eventCount < eventsToDisplay) {
                     appendPre( eventTitle , " - " + realHour + SstartMinute + pmOrAm);
-                    count++;
-                } else if(count === 0 && (String(today.getDate()) !== String(SDay))) {
+                    eventCount++;
+                } else if(eventCount === 0 && (String(today.getDate()) !== String(SDay))) {
                     appendPre("", "Nothing for today");
                     i = events.length;
                 }
