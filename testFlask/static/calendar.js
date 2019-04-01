@@ -142,7 +142,7 @@ function listUpcomingEvents() {
                 // var ENameOfDay = endInfo.substring(10,11);
                 // var EEndTime = endInfo.substring(11,16);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                if((String(todayMonth) === String(SMonth)) && (String(today.getDate()) === String(SDay)) && eventCount < eventsToDisplay) {
+                if((Number(todayMonth) === Number(SMonth)) && (Number(today.getDate()) === Number(SDay)) && eventCount < eventsToDisplay) {
                     appendPre( eventTitle , " - " + realHour + SstartMinute + pmOrAm);
                     eventCount++;
                 } else if(eventCount === 0 && (String(today.getDate()) !== String(SDay))) {
