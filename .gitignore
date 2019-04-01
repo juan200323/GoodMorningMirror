@@ -4,3 +4,6 @@ testFlask/.idea/encodings.xml
 testFlask/.idea/vcs.xml
 testFlask/.idea/workspace.xml
 testFlask/static/.DS_Store
+testFlask/.idea/misc.xml
+testFlask/.idea/testFlask.iml
+testFlask/venv

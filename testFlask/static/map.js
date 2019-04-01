@@ -34,15 +34,6 @@ function locationSuccess(position) {
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
     directionsDisplay.setMap(map);
     trafficLayer.setMap(map);
-
-
-    //This will mark the current location if found
-    // var myLocationMarker = new google.maps.Marker({
-    //     position: myLocation,
-    //     map: map,
-    //     title: 'Current location'
-    // });
-
     map.setCenter(myLocation);
 
     var request = {
@@ -52,7 +43,7 @@ function locationSuccess(position) {
     };
 
     directionsService.route(request, function (result, status) {
-        if (status == google.maps.DirectionsStatus.OK) {
+        if (status === google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(result);
             document.getElementById('travelTime').innerHTML = convertSeoncdsToTime(result.routes[0].legs[0].duration.value);
 

@@ -86,11 +86,6 @@ function appendPre(header,message) {
     initMap();
     var pre = document.getElementById('content');
     pre.insertAdjacentHTML("beforeend","<strong>" + header + "</strong>" + message + "\n");
-//////////////////////Will delete after testing//////////////////////////////////////////////
-    //var textContent = document.createTextNode(pre.innerHTML = "<b>" + message + "</b>" + "\n");
-    //pre.appendChild( pre.innerHTML = "<b>" + message + "</b>" + "\n");
-/////////////////////////////////////////////////////////////////////////////////////////////////
-
 }
 
 /**
@@ -129,19 +124,6 @@ function listUpcomingEvents() {
                 var eventTitle = String(event.summary);
                 var today = new Date();
                 var todayMonth = today.getMonth() + 1;
-
-//////////////////////////Start of event info not used(Delete after testing)//////////////////////////////////////////
-                //var SNameOfDay = startInfo.substring(10, 11);
-                //var SstartTime = startInfo.substring(11,16);
-
-                //This is parse info for the end of the event
-                //var endInfo = event.end.dateTime;
-                // var EYear = endInfo.substring(0,4);
-                // var EMonth = endInfo.substring(6,7);
-                // var EDay = endInfo.substring(8,10);
-                // var ENameOfDay = endInfo.substring(10,11);
-                // var EEndTime = endInfo.substring(11,16);
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 if((Number(todayMonth) === Number(SMonth)) && (Number(today.getDate()) === Number(SDay)) && eventCount < eventsToDisplay) {
                     appendPre( eventTitle , " - " + realHour + SstartMinute + pmOrAm);
                     eventCount++;
