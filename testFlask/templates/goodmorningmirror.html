@@ -31,19 +31,33 @@
 
         <h1 id="greeting">
             <script>
-                var date = new Date();
-                var hour = date.getHours();
-                var h1 = document.getElementById("greeting")
 
-                if(hour < 12){
-                    h1.innerText = "- Good Morning -";
+                function setGreeting(){
+                    var date = new Date();
+                    var hour = date.getHours();
+                    var h1 = document.getElementById("greeting");
+
+                    h1.innerText = "";
+
+                    if(hour < 12){
+                        h1.innerText = "- Good Morning -";
+                    }
+                    else if(hour < 18){
+                        h1.innerText = "- Good Afternoon -";
+                    }
+                    else{
+                        h1.innerText = "- Good Evening -";
+                    }
                 }
-                else if(hour < 18){
-                    h1.innerText = "- Good Afternoon -";
-                }
-                else{
-                    h1.innerText = "- Good Evening -";
-                }
+
+                setGreeting();
+
+                window.onunload = function test() {window.clearInterval(setGreeting());};
+
+                window.onload = function test() {
+                    window.setInterval(setGreeting, 3600 * 1000); //refresh's every hour
+                };
+
             </script>
         </h1>
 

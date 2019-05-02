@@ -20,6 +20,7 @@ function locationSuccess(position) {
     var Ventura = new google.maps.LatLng(34.2805, -119.2945);
     var CSUCI = new google.maps.LatLng(34.1621, -119.0434);
     var Disney = new google.maps.LatLng(33.8121, -117.9190);
+    var FYT = new google.maps.LatLng(34.252829, -119.224737);
 
 
     var mapOptions = {
@@ -38,7 +39,7 @@ function locationSuccess(position) {
 
     var request = {
         origin: myLocation,
-        destination: CSUCI,
+        destination: FYT,
         travelMode: google.maps.TravelMode.DRIVING
     };
 
